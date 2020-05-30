@@ -28,9 +28,9 @@ namespace VacationApp.Views
             BindingContext = viewModel = new ItemsViewModel();
         }
 
-        private void Pin_MarkerClicked(object sender, PinClickedEventArgs e)
+        private async void Pin_MarkerClicked(object sender, PinClickedEventArgs e)
         {
-
+            await Shell.Current.GoToAsync("///StateInfo");
         }
     }
 }
