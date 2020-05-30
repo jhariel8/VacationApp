@@ -11,8 +11,22 @@
     
 <!-- StackLayout arranges items in a stack. Each item added will be placed below the one above it in the UI. -->
     <StackLayout>
-        <maps:Map>
-            
+        <Label FontSize="20" Text="This is a Label" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+        <maps:Map MapType="Street">
+            <x:Arguments>
+                <maps:MapSpan>
+                    <x:Arguments>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>38.162208</x:Double>
+                                <x:Double>-95.943493</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                        <x:Double>30</x:Double>
+                        <x:Double>30</x:Double>
+                    </x:Arguments>
+                </maps:MapSpan>
+            </x:Arguments>
         </maps:Map>
     </StackLayout>
 
