@@ -10,6 +10,7 @@ using Xamarin.Forms.Xaml;
 using VacationApp.Models;
 using VacationApp.Views;
 using VacationApp.ViewModels;
+using Xamarin.Forms.Maps;
 
 namespace VacationApp.Views
 {
@@ -25,31 +26,6 @@ namespace VacationApp.Views
             InitializeComponent();
 
             BindingContext = viewModel = new ItemsViewModel();
-        }
-
-        async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
-        {
-            var item = args.SelectedItem as Item;
-            if (item == null)
-                return;
-
-            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
-
-            // Manually deselect item.
-            ItemsListView.SelectedItem = null;
-        }
-
-        async void AddItem_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
-        }
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-
-            if (viewModel.Items.Count == 0)
-                viewModel.LoadItemsCommand.Execute(null);
         }
     }
 }

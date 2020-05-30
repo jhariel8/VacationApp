@@ -41,6 +41,7 @@ namespace VacationApp.UWP
         {
             global::Xamarin.Forms.Forms.SetFlags("Shell_UWP_Experimental");
             Xamarin.Forms.Forms.Init(e);
+            Xamarin.FormsMaps.Init("NrQYzZQafbQOeoMfIMRk~aXpQOtJCFIC2cWagjHGGIA~AlS5KvEA-1CnepYKO1rnmGfrrBHKas8GmbGCA0MKV4e02kbp4b21D4B_0TlcQmQi");
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
