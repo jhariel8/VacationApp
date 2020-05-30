@@ -27,7 +27,22 @@
                     </x:Arguments>
                 </maps:MapSpan>
             </x:Arguments>
+            <maps:Map.Pins>
+                <maps:Pin Label="Santa Cruz"
+                       Address="The city with a boardwalk"
+                       Type="Generic" MarkerClicked="Pin_MarkerClicked">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>36.9628066</x:Double>
+                                <x:Double>-122.0194722</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+            </maps:Map.Pins>
         </maps:Map>
+        
     </StackLayout>
 
 </ContentPage>

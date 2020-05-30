@@ -27,5 +27,10 @@ namespace VacationApp.Views
 
             BindingContext = viewModel = new ItemsViewModel();
         }
+
+        private void Pin_MarkerClicked(object sender, PinClickedEventArgs e)
+        {
+
+        }
     }
 }
