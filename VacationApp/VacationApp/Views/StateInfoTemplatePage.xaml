@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView"
+             xmlns:views="clr-namespace:VacationApp.Views"
              mc:Ignorable="d"
              x:Class="VacationApp.Views.StateInfoTemplatePage">
     <ContentPage.Content>
@@ -48,6 +49,8 @@
                     </Frame>
                     <StackLayout Grid.Row="1">
                         <Label Text="Please select a city to view more info." TextColor="LightGray" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <views:View1/>
+                      
                     </StackLayout>
                 </Grid>
             </StackLayout>

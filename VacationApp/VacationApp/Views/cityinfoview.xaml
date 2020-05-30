@@ -4,11 +4,18 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView"
+             xmlns:controls="clr-namespace:PanCardView.Controls;assembly=PanCardView"
              mc:Ignorable="d"
              x:Class="VacationApp.Views.View1">
   <ContentView.Content>
         <Grid>
             <Label Text="cityname" TextColor="Black" HorizontalOptions="Center" FontSize="Title" Grid.Column="0" Grid.Row="0" />
+            <cards:CoverFlowView Grid.Column="0" Grid.Row="1">
+                <controls:RightArrowControl></controls:RightArrowControl>
+                <controls:LeftArrowControl></controls:LeftArrowControl>
+                
+            </cards:CoverFlowView>
+            <Label Text="Description" TextColor="LightGray" Grid.ColumnSpan="1" HorizontalOptions="Center" VerticalOptions="Center" />
             
         </Grid>
   </ContentView.Content>
