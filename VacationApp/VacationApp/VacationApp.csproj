@@ -17,6 +17,9 @@
     <Compile Update="Views\FloridainfoPage.xaml.cs">
       <DependentUpon>FloridainfoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\NevadainfoPage.xaml.cs">
+      <DependentUpon>NevadainfoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\StateInfoTemplatePage.xaml.cs">
       <DependentUpon>StateInfoTemplatePage.xaml</DependentUpon>
     </Compile>
