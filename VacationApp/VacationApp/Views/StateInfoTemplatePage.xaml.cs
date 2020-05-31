@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using VacationApp.ViewModels;
 using VacationApp.Models;
+using VacationApp.Services;
 
 namespace VacationApp.Views
 {
@@ -23,7 +24,7 @@ namespace VacationApp.Views
             placeholderLabel.IsVisible = true;
         }
 
-        private void City1_Clicked(object sender, EventArgs e)
+        private async void City1_Clicked(object sender, EventArgs e)
         {
             City1.BindingContext = new CityInfoViewModel()
             {
@@ -38,6 +39,10 @@ namespace VacationApp.Views
             City2.IsVisible = false;
             City3.IsVisible = false;
             placeholderLabel.IsVisible = false;
+
+            //var requestService = new RequestService();
+            //string count = await requestService.ReadCaseCountByState("Florida");
+            //caseCount.Text = count.ToString();
         }
 
         private void City2_Clicked(object sender, EventArgs e)
