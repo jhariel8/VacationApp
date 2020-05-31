@@ -7,7 +7,7 @@
              xmlns:views="clr-namespace:VacationApp.Views"
              mc:Ignorable="d"
              Shell.TabBarIsVisible="False"
-             x:Class="VacationApp.Views.FloridainfoPage">
+             x:Class="VacationApp.Views.CaliforniainfoPage">
     <ContentPage.Content>
         <ScrollView x:Name="scrollView">
             <StackLayout>
@@ -21,10 +21,10 @@
                         <RowDefinition Height="400"/>
                     </Grid.RowDefinitions>
                     <StackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
-                        <Label Text="Florida" FontSize="Header" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Margin="10" />
-                        <Button Text="Orlando" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightCoral" WidthRequest="250" Clicked="City1_Clicked"/>
-                        <Button Text="Miami" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightCoral" WidthRequest="250" Clicked="City2_Clicked"/>
-                        <Button Text="Tampa" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightCoral" WidthRequest="250" Clicked="City3_Clicked"/>
+                        <Label Text="California" FontSize="Header" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Margin="10" />
+                        <Button Text="Los Angeles" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightCoral" WidthRequest="250" Clicked="City1_Clicked"/>
+                        <Button Text="San Diego " HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightCoral" WidthRequest="250" Clicked="City2_Clicked"/>
+                        <Button Text="Sacramento" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightCoral" WidthRequest="250" Clicked="City3_Clicked"/>
                     </StackLayout>
                     <Frame Grid.Column="1" BackgroundColor="Transparent" HasShadow="True" BorderColor="Black" CornerRadius="5" HorizontalOptions="End" Margin="10">
                         <StackLayout Padding="0, 0, 0, 10">
@@ -41,9 +41,9 @@
                                 <Label Grid.Row="0" Grid.Column="1" Text="Parks" HorizontalOptions="Center" TextColor="Black" FontSize="Subtitle"/>
                                 <Grid Grid.Row="1" Grid.ColumnSpan="2">
                                     <Image Source="downarrow.png" Grid.Column="0" Scale=".5" HorizontalOptions="End"/>
-                                    <Label Text="-34%" TextColor="Black" FontSize="Title" Grid.Column="1" HorizontalOptions="Start"/>
-                                    <Image Source="downarrow.png" Grid.Column="2" Scale=".5" HorizontalOptions="End"/>
-                                    <Label Text="-40%" TextColor="Black" FontSize="Title" Grid.Column="3" HorizontalOptions="Start"/>
+                                    <Label Text="-43%" TextColor="Black" FontSize="Title" Grid.Column="1" HorizontalOptions="Start"/>
+                                    <Image Source="uparrow.png" Grid.Column="2" Scale=".5" HorizontalOptions="End"/>
+                                    <Label Text="+32%" TextColor="Black" FontSize="Title" Grid.Column="3" HorizontalOptions="Start"/>
                                 </Grid>
                             </Grid>
                         </StackLayout>

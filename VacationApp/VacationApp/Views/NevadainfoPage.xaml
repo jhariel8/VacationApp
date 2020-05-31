@@ -6,6 +6,7 @@
              xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView"
              xmlns:views="clr-namespace:VacationApp.Views"
              mc:Ignorable="d"
+             Shell.TabBarIsVisible="False"
              x:Class="VacationApp.Views.NevadainfoPage">
     <ContentPage.Content>
         <ScrollView x:Name="scrollView">
@@ -21,13 +22,13 @@
                     </Grid.RowDefinitions>
                     <StackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
                         <Label Text="Nevada" FontSize="Header" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Margin="10" />
-                        <Button Text="LasVegas" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250" Clicked="City1_Clicked"/>
-                        <Button Text="Reno" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250" Clicked="City2_Clicked"/>
+                        <Button Text="LasVegas" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightCoral" WidthRequest="250" Clicked="City1_Clicked"/>
+                        <Button Text="Reno" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightCoral" WidthRequest="250" Clicked="City2_Clicked"/>
                     </StackLayout>
                     <Frame Grid.Column="1" BackgroundColor="Transparent" HasShadow="True" BorderColor="Black" CornerRadius="5" HorizontalOptions="End" Margin="10">
                         <StackLayout Padding="0, 0, 0, 10">
                             <Label Text="State Info" TextColor="Black" HorizontalOptions="Center" FontSize="Title" />
-                            <Button Text="Go to Live COVID-19 Case Count" HorizontalOptions="Center" BackgroundColor="DeepSkyBlue" Command="{Binding GoToCaseCountCommand}" CommandParameter="https://www.worldometers.info/coronavirus/usa/florida/"/>
+                            <Button Text="Go to Live COVID-19 Case Count" HorizontalOptions="Center" BackgroundColor="LightCyan" Command="{Binding GoToCaseCountCommand}" CommandParameter="https://www.worldometers.info/coronavirus/usa/florida/"/>
                             <BoxView HeightRequest="2" BackgroundColor="Black"/>
                             <Label Text="Mobility Data (as of May 28th, 2020)" HorizontalOptions="Center" TextColor="Black" FontSize="Subtitle"/>
                             <Grid>
