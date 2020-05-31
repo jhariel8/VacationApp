@@ -21,15 +21,15 @@
                         <RowDefinition Height="400"/>
                     </Grid.RowDefinitions>
                     <StackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
-                        <Label Text="California" FontSize="Header" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Margin="10" />
-                        <Button Text="Los Angeles" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightCoral" WidthRequest="250" Clicked="City1_Clicked"/>
-                        <Button Text="San Diego " HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightCoral" WidthRequest="250" Clicked="City2_Clicked"/>
-                        <Button Text="Sacramento" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightCoral" WidthRequest="250" Clicked="City3_Clicked"/>
+                        <Label Text="California" FontSize="Header" VerticalOptions="Center" HorizontalOptions="Center" TextColor="LightBlue" Margin="10" />
+                        <Button Text="Los Angeles" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BackgroundColor="#e83737" WidthRequest="250" Clicked="City1_Clicked"/>
+                        <Button Text="San Diego " HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BackgroundColor="#e83737" WidthRequest="250" Clicked="City2_Clicked"/>
+                        <Button Text="Sacramento" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BackgroundColor="#e83737" WidthRequest="250" Clicked="City3_Clicked"/>
                     </StackLayout>
                     <Frame Grid.Column="1" BackgroundColor="Transparent" HasShadow="True" BorderColor="Black" CornerRadius="5" HorizontalOptions="End" Margin="10">
                         <StackLayout Padding="0, 0, 0, 10">
                             <Label Text="State Info" TextColor="Black" HorizontalOptions="Center" FontSize="Title" />
-                            <Button Text="Go to Live COVID-19 Case Count" HorizontalOptions="Center" BackgroundColor="LightCyan" Command="{Binding GoToCaseCountCommand}" CommandParameter="https://www.worldometers.info/coronavirus/usa/florida/"/>
+                            <Button Text="Go to Live COVID-19 Case Count" HorizontalOptions="Center" BackgroundColor="LightBlue" Command="{Binding GoToCaseCountCommand}" CommandParameter="https://www.worldometers.info/coronavirus/usa/florida/"/>
                             <BoxView HeightRequest="2" BackgroundColor="Black"/>
                             <Label Text="Mobility Data (as of May 28th, 2020)" HorizontalOptions="Center" TextColor="Black" FontSize="Subtitle"/>
                             <Grid>
