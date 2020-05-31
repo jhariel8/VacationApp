@@ -6,14 +6,18 @@
        mc:Ignorable="d"
        xmlns:local="clr-namespace:VacationApp.Views"
        Title="VacationApp"
-       x:Class="VacationApp.AppShell">
+       x:Class="VacationApp.AppShell"
+       Shell.TabBarBackgroundColor="#e83737"
+       Shell.TabBarIsVisible="False"
+       Shell.BackgroundColor="#ffffff"
+       Shell.TitleColor="Black">
 
     <!-- 
         Styles and Resources 
     -->
     <Shell.Resources>
         <ResourceDictionary>
-            <Color x:Key="NavigationPrimary">#ffffff</Color>
+            <Color x:Key="NavigationPrimary">#e83737</Color>
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
