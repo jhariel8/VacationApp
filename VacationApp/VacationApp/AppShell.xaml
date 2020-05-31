@@ -9,7 +9,8 @@
        x:Class="VacationApp.AppShell"
        Shell.TabBarBackgroundColor="#e83737"
        Shell.TabBarIsVisible="False"
-       Shell.BackgroundColor="#e83737">
+       Shell.BackgroundColor="#ffffff"
+       Shell.TitleColor="Black">
 
     <!-- 
         Styles and Resources 
