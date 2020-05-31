@@ -44,8 +44,8 @@
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="StateInfo" Route="FloridaInfoPage">
-        <Tab>
+    <FlyoutItem Title="StateInfo" Route="StateInfoPages" FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Florida" Route="FloridaInfoPage">
             <ShellContent ContentTemplate="{DataTemplate local:FloridainfoPage}" />
         </Tab>
     </FlyoutItem>

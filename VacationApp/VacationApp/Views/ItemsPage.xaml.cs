@@ -40,7 +40,7 @@ namespace VacationApp.Views
 
         private async void Florida_Pin_MarkerClicked(object sender, PinClickedEventArgs e)
         {
-            await Shell.Current.GoToAsync("///FloridaInfoPage");
+            await Shell.Current.GoToAsync("//StateInfoPages/FloridaInfoPage");
         }
     }
 }
