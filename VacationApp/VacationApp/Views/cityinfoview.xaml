@@ -33,7 +33,7 @@
                                     <RowDefinition Height="*"/>
                                     <RowDefinition Height="50"/>
                                 </Grid.RowDefinitions>
-                                <Image Source="{Binding ImageSource}" Grid.Row="0"/>
+                                <Image Source="{Binding ImageSource}" Grid.Row="0" IsAnimationPlaying="True"/>
                                 <Label Text="{Binding Date}" TextColor="Black" HorizontalOptions="Center" Grid.Row="1"/>
                                 
                             </Grid>

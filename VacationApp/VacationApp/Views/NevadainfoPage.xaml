@@ -40,7 +40,7 @@
                                 <Label Grid.Row="0" Grid.Column="1" Text="Parks" HorizontalOptions="Center" TextColor="Black" FontSize="Subtitle"/>
                                 <Grid Grid.Row="1" Grid.ColumnSpan="2">
                                     <Image Source="downarrow.png" Grid.Column="0" Scale=".5" HorizontalOptions="End"/>
-                                    <Label Text="-29" TextColor="Black" FontSize="Title" Grid.Column="1" HorizontalOptions="Start"/>
+                                    <Label Text="-29%" TextColor="Black" FontSize="Title" Grid.Column="1" HorizontalOptions="Start"/>
                                     <Image Source="uparrow.png" Grid.Column="2" Scale=".5" HorizontalOptions="End"/>
                                     <Label Text="+3%" TextColor="Black" FontSize="Title" Grid.Column="3" HorizontalOptions="Start"/>
                                 </Grid>
