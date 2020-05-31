@@ -48,6 +48,9 @@
         <Tab Title="Florida" Route="FloridaInfoPage">
             <ShellContent ContentTemplate="{DataTemplate local:FloridainfoPage}" />
         </Tab>
+        <Tab Title="Nevada" Route="NevadaInfoPage">
+            <ShellContent ContentTemplate="{DataTemplate local:NevadainfoPage}" />
+        </Tab>
     </FlyoutItem>
 
 

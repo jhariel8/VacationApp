@@ -30,12 +30,12 @@ namespace VacationApp.Views
 
         private async void California_Pin_MarkerClicked(object sender, PinClickedEventArgs e)
         {
-            //await Shell.Current.GoToAsync("///StateInfo");
+            await Shell.Current.GoToAsync("//StateInfoPages/CaliforniaInfoPage");
         }
 
         private async void Nevada_Pin_MarkerClicked(object sender, PinClickedEventArgs e)
         {
-            //await Shell.Current.GoToAsync("///StateInfo");
+            await Shell.Current.GoToAsync("//StateInfoPages/NevadaInfoPage");
         }
 
         private async void Florida_Pin_MarkerClicked(object sender, PinClickedEventArgs e)

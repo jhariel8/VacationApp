@@ -28,11 +28,15 @@
                 <cards:CoverFlowView.ItemTemplate>
                     <DataTemplate>
                         <ContentView>
-                            <StackLayout>
-                                <Image Source="{Binding ImageSource}"/>
-                                <Label Text="{Binding Date}" TextColor="Black" HorizontalOptions="Center"/>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="50"/>
+                                </Grid.RowDefinitions>
+                                <Image Source="{Binding ImageSource}" Grid.Row="0"/>
+                                <Label Text="{Binding Date}" TextColor="Black" HorizontalOptions="Center" Grid.Row="1"/>
                                 
-                            </StackLayout>
+                            </Grid>
                         </ContentView>
                     </DataTemplate>
                 </cards:CoverFlowView.ItemTemplate>
