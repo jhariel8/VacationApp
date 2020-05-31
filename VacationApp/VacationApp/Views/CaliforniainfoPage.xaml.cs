@@ -8,12 +8,15 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using VacationApp.ViewModels;
 using VacationApp.Models;
+using VacationApp.Services;
 
 namespace VacationApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CaliforniainfoPage  : ContentPage
     {
+        private readonly IRequestService requestService;
+
         public CaliforniainfoPage()
         {
             InitializeComponent();
@@ -21,6 +24,12 @@ namespace VacationApp.Views
             BindingContext = new StateInfoPageViewModel();
 
             placeholderLabel.IsVisible = true;
+
+            requestService = DependencyService.Get<IRequestService>();
+
+            UpdateCount();
+
+            Device.StartTimer(TimeSpan.FromSeconds(10), UpdateCount);
         }
 
         private void City1_Clicked(object sender, EventArgs e)
@@ -88,6 +97,16 @@ namespace VacationApp.Views
             City2.IsVisible = false;
             City3.IsVisible = true;
             placeholderLabel.IsVisible = false;
+        }
+
+        private bool UpdateCount()
+        {
+            Task.Run(async () =>
+            {
+                string caseCount = await requestService.ReadCaseCountByState("CA");
+                Device.BeginInvokeOnMainThread(() => liveCaseCount.Text = "Live Case Count: " + caseCount);
+            });
+            return true;
         }
     }
 }
