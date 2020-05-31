@@ -17,11 +17,11 @@
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="275"/>
-                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="400"/>
                     </Grid.RowDefinitions>
                     <StackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
                         <Label Text="State Name" FontSize="Header" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Margin="10" />
-                        <Button Text="City1" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250"/>
+                        <Button Text="City1" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250" Clicked="City1_Clicked"/>
                         <Button Text="City2" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250"/>
                         <Button Text="City3" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250"/>
                     </StackLayout>
@@ -47,9 +47,9 @@
                             </Grid>
                         </StackLayout>
                     </Frame>
-                    <StackLayout Grid.Row="1">
+                    <StackLayout Grid.Row="1" Grid.ColumnSpan="2">
                         <Label Text="Please select a city to view more info." TextColor="LightGray" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center"/>
-                        <views:View1/>
+                        <views:CityInfoView x:Name="City1"/>
                       
                     </StackLayout>
                 </Grid>
