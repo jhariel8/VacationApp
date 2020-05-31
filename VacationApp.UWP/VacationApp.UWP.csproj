@@ -131,6 +131,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="downarrow.png" />
+    <Content Include="LasV_April17th_2019.jpg" />
+    <Content Include="LasV_April17th_2020.jpg" />
+    <Content Include="LasV_Feb27th_2020.jpg" />
+    <Content Include="LasV_Jan27th_2020.jpg" />
+    <Content Include="LasV_March27th_2020.jpg" />
+    <Content Include="LasV_May29th_2020.jpg" />
+    <Content Include="LasV_May8th_2020.jpg" />
+    <Content Include="Miami_April17th_2019.jpg" />
+    <Content Include="Miami_April17th_2020.jpg" />
+    <Content Include="Miami_Feb27th_new2020.jpg" />
+    <Content Include="Miami_Jan27th_new2020.jpg" />
+    <Content Include="Miami_March27th_2020.jpg" />
+    <Content Include="Miami_March27th_new2020.jpg" />
+    <Content Include="Miami_May29th_2020.jpg" />
+    <Content Include="Miami_May8th_2020.jpg" />
+    <Content Include="Orlando_April17th_2019.jpg" />
+    <Content Include="Orlando_April17th_2020.jpg" />
+    <Content Include="Orlando_Feb27th_2020.jpg" />
+    <Content Include="Orlando_Jan27th_2020.jpg" />
+    <Content Include="Orlando_March27th_2020.jpg" />
+    <Content Include="Orlando_May29th_2020.jpg" />
+    <Content Include="Orlando_May8th_2020.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -139,6 +161,20 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Reno_April17th_2019.jpg" />
+    <Content Include="Reno_April17th_2020.jpg" />
+    <Content Include="Reno_Feb27th_2020.jpg" />
+    <Content Include="Reno_Jan27th_2020.jpg" />
+    <Content Include="Reno_March27th_2020.jpg" />
+    <Content Include="Reno_May29TH_2020.jpg" />
+    <Content Include="Reno_May8th_2020.jpg" />
+    <Content Include="Tampa_april17th_2019.jpg" />
+    <Content Include="tampa_april17th_2020.jpg" />
+    <Content Include="tampa_feb27th_2020.jpg" />
+    <Content Include="tampa_Jan27th_2020.jpg" />
+    <Content Include="tampa_march27th_2020.jpg" />
+    <Content Include="tampa_may29th_2020.jpg" />
+    <Content Include="tampa_may8th_2020.jpg" />
     <Content Include="uparrow.png" />
   </ItemGroup>
   <ItemGroup>
