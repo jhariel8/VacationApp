@@ -11,7 +11,7 @@
        Shell.TabBarIsVisible="False"
        Shell.BackgroundColor="#ffffff"
        Shell.TitleColor="Black"
-       FlyoutIcon="White Burger.png">
+       FlyoutBackgroundColor="White">
 
     <!-- 
         Styles and Resources 
@@ -28,7 +28,17 @@
             </Style>
         </ResourceDictionary>
     </Shell.Resources>
-    
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="White"
+              HeightRequest="200">
+                <Image Aspect="AspectFill"
+                   Source="Assets\Wide310x150Logo.scale-400.png"
+                   Opacity="1" />
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
 
     <!-- Your Pages -->
     <!--TabBar>
