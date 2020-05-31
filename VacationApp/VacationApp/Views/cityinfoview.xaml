@@ -5,17 +5,41 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView"
              xmlns:controls="clr-namespace:PanCardView.Controls;assembly=PanCardView"
+             xmlns:vm="clr-namespace:VacationApp.ViewModels"
+             xmlns:converters="clr-namespace:VacationApp.Views.Converter"
+             xmlns:view="clr-namespace:VacationApp.Views"
              mc:Ignorable="d"
-             x:Class="VacationApp.Views.View1">
+             x:Name="CityInfoView1"
+             x:Class="VacationApp.Views.CityInfoView">
+    <ContentView.BindingContext>
+        <vm:CityInfoViewModel></vm:CityInfoViewModel>
+    </ContentView.BindingContext>
+    <ContentView.Resources>
+        <converters:DictionaryToImageSourceConverter x:Key="ImageSourceConverter"/>
+    </ContentView.Resources>
   <ContentView.Content>
         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
             <Label Text="cityname" TextColor="Black" HorizontalOptions="Center" FontSize="Title" Grid.Column="0" Grid.Row="0" />
-            <cards:CoverFlowView Grid.Column="0" Grid.Row="1">
+            <cards:CoverFlowView ItemsSource="{Binding DateImages}" Grid.Column="0" Grid.Row="1">
+                <cards:CoverFlowView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView>
+                            <StackLayout>
+                                <Image Source="{Binding ImageSource}" Scale=".5"/>
+                                <Label Text="{Binding Date}" TextColor="Black"/>
+                            </StackLayout>
+                        </ContentView>
+                    </DataTemplate>
+                </cards:CoverFlowView.ItemTemplate>
                 <controls:RightArrowControl></controls:RightArrowControl>
                 <controls:LeftArrowControl></controls:LeftArrowControl>
                 
             </cards:CoverFlowView>
-            <Label Text="Description" TextColor="LightGray" Grid.ColumnSpan="1" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Label Text="Description" TextColor="LightGray" Grid.ColumnSpan="1" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="1"/>
             
         </Grid>
   </ContentView.Content>
