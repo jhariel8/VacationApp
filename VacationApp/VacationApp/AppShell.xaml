@@ -44,6 +44,11 @@
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
     </FlyoutItem>
+    <FlyoutItem Title="StateInfo">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:StateInfoTemplatePage}" />
+        </Tab>
+    </FlyoutItem>
                 
 
     <!-- Optional Templates 
