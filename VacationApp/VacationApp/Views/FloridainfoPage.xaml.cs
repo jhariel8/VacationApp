@@ -38,7 +38,8 @@ namespace VacationApp.Views
                     new DateImage() { ImageSource = "Orlando_Jan27th_2020.jpg", Date = "1/27/2020" }
 
 
-                }
+                },
+                CityName = "Orlando"
             };
 
             City1.IsVisible = true;

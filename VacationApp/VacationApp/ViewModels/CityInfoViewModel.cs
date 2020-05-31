@@ -10,6 +10,8 @@ namespace VacationApp.ViewModels
     {
         public List<DateImage> DateImages { get; set; }
 
+        public string CityName { get; set; }
+
         public CityInfoViewModel()
         {
          
