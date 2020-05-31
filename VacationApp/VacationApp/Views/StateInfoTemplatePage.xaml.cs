@@ -35,6 +35,8 @@ namespace VacationApp.Views
             };
 
             City1.IsVisible = true;
+            City2.IsVisible = false;
+            City3.IsVisible = false;
             placeholderLabel.IsVisible = false;
         }
 
@@ -49,7 +51,9 @@ namespace VacationApp.Views
                 }
             };
 
+            City1.IsVisible = false;
             City2.IsVisible = true;
+            City3.IsVisible = false;
             placeholderLabel.IsVisible = false;
         }
 
@@ -64,6 +68,8 @@ namespace VacationApp.Views
                 }
             };
 
+            City1.IsVisible = false;
+            City2.IsVisible = false;
             City3.IsVisible = true;
             placeholderLabel.IsVisible = false;
         }
