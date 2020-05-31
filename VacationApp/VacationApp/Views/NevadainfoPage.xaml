@@ -28,7 +28,7 @@
                     <Frame Grid.Column="1" BackgroundColor="Transparent" HasShadow="True" BorderColor="Black" CornerRadius="5" HorizontalOptions="End" Margin="10">
                         <StackLayout Padding="0, 0, 0, 10">
                             <Label Text="State Info" TextColor="Black" HorizontalOptions="Center" FontSize="Title" />
-                            <Button Text="Go to Live COVID-19 Case Count" HorizontalOptions="Center" BackgroundColor="LightBlue" Command="{Binding GoToCaseCountCommand}" CommandParameter="https://www.worldometers.info/coronavirus/usa/florida/"/>
+                            <Label x:Name="liveCaseCount" TextColor="Black" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
                             <BoxView HeightRequest="2" BackgroundColor="Black"/>
                             <Label Text="Mobility Data (as of May 28th, 2020)" HorizontalOptions="Center" TextColor="Black" FontSize="Subtitle"/>
                             <Grid>

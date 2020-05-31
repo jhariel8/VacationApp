@@ -16,6 +16,7 @@ namespace VacationApp.Views
     public partial class CaliforniainfoPage  : ContentPage
     {
         private readonly IRequestService requestService;
+        bool timerShouldContinue = true;
 
         public CaliforniainfoPage()
         {
@@ -29,7 +30,7 @@ namespace VacationApp.Views
 
             UpdateCount();
 
-            Device.StartTimer(TimeSpan.FromSeconds(10), UpdateCount);
+            Device.StartTimer(TimeSpan.FromSeconds(3), UpdateCount);
         }
 
         private void City1_Clicked(object sender, EventArgs e)
@@ -106,7 +107,21 @@ namespace VacationApp.Views
                 string caseCount = await requestService.ReadCaseCountByState("CA");
                 Device.BeginInvokeOnMainThread(() => liveCaseCount.Text = "Live Case Count: " + caseCount);
             });
-            return true;
+            return timerShouldContinue;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            timerShouldContinue = true;
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+            timerShouldContinue = false;
         }
     }
 }

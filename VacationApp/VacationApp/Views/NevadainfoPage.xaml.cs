@@ -8,12 +8,16 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using VacationApp.ViewModels;
 using VacationApp.Models;
+using VacationApp.Services;
 
 namespace VacationApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NevadainfoPage : ContentPage
     {
+        private readonly IRequestService requestService;
+        bool timerShouldContinue = true;
+
         public NevadainfoPage()
         {
             InitializeComponent();
@@ -21,6 +25,12 @@ namespace VacationApp.Views
             BindingContext = new StateInfoPageViewModel();
 
             placeholderLabel.IsVisible = true;
+
+            requestService = DependencyService.Get<IRequestService>();
+
+            UpdateCount();
+
+            Device.StartTimer(TimeSpan.FromSeconds(3), UpdateCount);
         }
 
         private void City1_Clicked(object sender, EventArgs e)
@@ -68,6 +78,28 @@ namespace VacationApp.Views
             placeholderLabel.IsVisible = false;
         }
 
-       
+        private bool UpdateCount()
+        {
+            Task.Run(async () =>
+            {
+                string caseCount = await requestService.ReadCaseCountByState("NV");
+                Device.BeginInvokeOnMainThread(() => liveCaseCount.Text = "Live Case Count: " + caseCount);
+            });
+            return timerShouldContinue;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            timerShouldContinue = true;
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+            timerShouldContinue = false;
+        }
     }
 }
