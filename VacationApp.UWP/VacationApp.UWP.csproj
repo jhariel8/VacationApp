@@ -130,6 +130,10 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="1-27-20.jpg" />
+    <Content Include="2-27-20.jpg" />
+    <Content Include="3-27-20.jpg" />
+    <Content Include="4-17-19.jpg" />
     <Content Include="Assets\BadgeLogo.scale-100.png" />
     <Content Include="Assets\BadgeLogo.scale-125.png" />
     <Content Include="Assets\BadgeLogo.scale-150.png" />
@@ -188,6 +192,7 @@
     <Content Include="LasV_March27th_2020.jpg" />
     <Content Include="LasV_May29th_2020.jpg" />
     <Content Include="LasV_May8th_2020.jpg" />
+    <Content Include="la_gif.gif" />
     <Content Include="Miami_April17th_2019.jpg" />
     <Content Include="Miami_April17th_2020.jpg" />
     <Content Include="Miami_Feb27th_new2020.jpg" />
@@ -217,6 +222,16 @@
     <Content Include="Reno_March27th_2020.jpg" />
     <Content Include="Reno_May29TH_2020.jpg" />
     <Content Include="Reno_May8th_2020.jpg" />
+    <Content Include="sac_1-27-20.jpg" />
+    <Content Include="Sac_2-27-20.jpg" />
+    <Content Include="sac_3-27-20.jpg" />
+    <Content Include="Sac_4-17-19.jpg" />
+    <Content Include="sac_GIF.gif" />
+    <Content Include="SD_1-27-20.jpg" />
+    <Content Include="SD_2-27-20.jpg" />
+    <Content Include="SD_3-27-20.jpg" />
+    <Content Include="SD_4-17-19.jpg" />
+    <Content Include="sd_GIF.gif" />
     <Content Include="Tampa_april17th_2019.jpg" />
     <Content Include="tampa_april17th_2020.jpg" />
     <Content Include="tampa_feb27th_2020.jpg" />
