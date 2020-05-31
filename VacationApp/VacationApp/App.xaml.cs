@@ -15,6 +15,11 @@ namespace VacationApp
 
             DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
+
+            Routing.RegisterRoute("FloridaInfoPage", typeof(FloridaInfoPage));
+            Routing.RegisterRoute("CaliforniaInfoPage", typeof(CaliforniaInfoPage));
+            Routing.RegisterRoute("NevadaInfoPage", typeof(NevadaInfoPage));
+ 
         }
 
         protected override void OnStart()
