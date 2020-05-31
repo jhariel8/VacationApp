@@ -54,7 +54,7 @@ namespace VacationApp.Views
                     new DateImage() { ImageSource = "Reno_May29TH_2020.jpg", Date = "5/29/2020" },
                     new DateImage() { ImageSource = "Reno_May8th_2020.jpg", Date="5/8/2020" },
                     new DateImage() { ImageSource = "Reno_April17th_2020.jpg", Date = "4/17/2020" },
-                    new DateImage() { ImageSource = "Reno_April17_2019.jpg", Date = "4/17/2019" },
+                    new DateImage() { ImageSource = "Reno_April17th_2019.jpg", Date = "4/17/2019" },
                     new DateImage() { ImageSource = "Reno_March27th_2020.jpg", Date = "3/27/2020" },
                     new DateImage() { ImageSource = "Reno_Feb27th_2020.jpg", Date = "2/27/2020" },
                     new DateImage() { ImageSource = "Reno_Jan27th_2020.jpg", Date = "1/27/2020" }
