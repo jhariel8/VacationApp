@@ -36,7 +36,8 @@ namespace VacationApp.Views
                     new DateImage() { ImageSource = "LasV_March27th_2020.jpg", Date = "3/27/2020" },
                     new DateImage() { ImageSource = "LasV_Feb27th_2020.jpg", Date = "2/27/2020" },
                     new DateImage() { ImageSource = "LasV_Jan27th_2020.jpg", Date = "1/27/2020" }
-                }
+                },
+                CityName = "Las Vegas"
             };
 
             City1.IsVisible = true;
@@ -58,7 +59,8 @@ namespace VacationApp.Views
                     new DateImage() { ImageSource = "Reno_Feb27th_2020.jpg", Date = "2/27/2020" },
                     new DateImage() { ImageSource = "Reno_Jan27th_2020.jpg", Date = "1/27/2020" }
                     
-                }
+                },
+                CityName = "Reno"
             };
 
             City1.IsVisible = false;

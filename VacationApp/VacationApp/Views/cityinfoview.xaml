@@ -23,21 +23,21 @@
                 <RowDefinition Height="75"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Label Text="cityname" TextColor="Black" HorizontalOptions="Center" FontSize="Title" Grid.Column="0" Grid.Row="0" />
+            <Label Text="{Binding CityName}" TextColor="Black" HorizontalOptions="Center" FontSize="Title" Grid.Column="0" Grid.Row="0" />
             <cards:CoverFlowView ItemsSource="{Binding DateImages}" Grid.Column="0" Grid.Row="1">
                 <cards:CoverFlowView.ItemTemplate>
                     <DataTemplate>
                         <ContentView>
                             <StackLayout>
-                                <Image Source="{Binding ImageSource}" Scale=".5"/>
+                                <Image Source="{Binding ImageSource}"/>
                                 <Label Text="{Binding Date}" TextColor="Black" HorizontalOptions="Center"/>
                                 
                             </StackLayout>
                         </ContentView>
                     </DataTemplate>
                 </cards:CoverFlowView.ItemTemplate>
-                <controls:RightArrowControl></controls:RightArrowControl>
-                <controls:LeftArrowControl></controls:LeftArrowControl>
+                <controls:RightArrowControl BackgroundColor="Black"></controls:RightArrowControl>
+                <controls:LeftArrowControl BackgroundColor="Black"></controls:LeftArrowControl>
                 
             </cards:CoverFlowView>
             <Label Text="Scroll through the photos to see the changes in activity before and during the COVID-19 pandemic. Make sure to stay up to date on all new covid-19 updates in your region and to follow The centers for Disease Control and Prevention (CDC) health guidelines before travel. " TextColor="LightGray" Grid.ColumnSpan="1" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="1"/>

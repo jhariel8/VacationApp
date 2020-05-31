@@ -61,7 +61,9 @@ namespace VacationApp.Views
                     new DateImage() { ImageSource = "Miami_March27th_new2020.jpg", Date = "3/27/2020" },
                     new DateImage() { ImageSource = "Miami_Feb27th_new2020.jpg", Date = "2/27/2020" },
                     new DateImage() { ImageSource = "Miami_Jan27th_new2020.jpg", Date = "1/27/2020" }
-                }
+                },
+                CityName = "Miami"
+
             };
 
             City1.IsVisible = false;
@@ -83,7 +85,8 @@ namespace VacationApp.Views
                     new DateImage() { ImageSource = "tampa_march27th_2020.jpg", Date = "3/27/2020" },
                     new DateImage() { ImageSource = "tampa_feb27th_2020.jpg", Date = "2/27/2020" },
                     new DateImage() { ImageSource = "tampa_Jan27th_2020.jpg", Date = "1/27/2020" }
-                }
+                },
+                CityName = "Tampa"
             };
 
             City1.IsVisible = false;
