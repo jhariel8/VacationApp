@@ -28,10 +28,10 @@
                     </x:Arguments>
                 </maps:MapSpan>
             </x:Arguments>
-            <maps:Map.Pins>
+            <!--maps:Map.Pins>
                 <maps:Pin Label="California"
                        Address="The state of California."
-                       Type="Generic" MarkerClicked="California_Pin_MarkerClicked">
+                       Type="Generic" x:Name="caliPin">
                     <maps:Pin.Position>
                         <maps:Position>
                             <x:Arguments>
@@ -43,7 +43,7 @@
                 </maps:Pin>
                 <maps:Pin Label="Nevada"
                        Address="The state of Nevada."
-                       Type="Generic" MarkerClicked="Nevada_Pin_MarkerClicked">
+                       Type="Generic" x:Name="nevadaPin">
                     <maps:Pin.Position>
                         <maps:Position>
                             <x:Arguments>
@@ -55,7 +55,7 @@
                 </maps:Pin>
                 <maps:Pin Label="Florida"
                        Address="The state of Florida."
-                       Type="Generic" MarkerClicked="Florida_Pin_MarkerClicked">
+                       Type="Generic" x:Name="floridaPin">
                     <maps:Pin.Position>
                         <maps:Position>
                             <x:Arguments>
@@ -65,7 +65,7 @@
                         </maps:Position>
                     </maps:Pin.Position>
                 </maps:Pin>
-            </maps:Map.Pins>
+            </-->
         </maps:Map>
     </StackLayout>
 

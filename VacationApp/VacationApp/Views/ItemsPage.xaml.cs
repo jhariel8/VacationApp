@@ -42,5 +42,32 @@ namespace VacationApp.Views
         {
             await Shell.Current.GoToAsync("//StateInfoPages/FloridaInfoPage");
         }
+
+        protected override void OnDisappearing()
+        {
+            mapmap.Pins[0].MarkerClicked -= Florida_Pin_MarkerClicked;
+            mapmap.Pins[1].MarkerClicked -= California_Pin_MarkerClicked;
+            mapmap.Pins[2].MarkerClicked -= Nevada_Pin_MarkerClicked;
+
+            mapmap.Pins.Clear();
+
+            base.OnDisappearing();
+        }
+
+        protected override void OnAppearing()
+        {
+            var caliPin = new Pin() { Label = "California", Address = "The state of California.", Position = new Position(36.456636, -119.326283), Type = PinType.Generic };
+            caliPin.MarkerClicked += California_Pin_MarkerClicked;
+            var floridaPin = new Pin() { Label = "Florida", Address = "The state of Florida.", Position = new Position(39.571822, -116.886922), Type = PinType.Generic };
+            floridaPin.MarkerClicked += Florida_Pin_MarkerClicked;
+            var nevadaPin = new Pin() { Label = "Nevada", Address = "The state of Nevada.", Position = new Position(28.381735, -81.779204), Type = PinType.Generic };
+            nevadaPin.MarkerClicked += Nevada_Pin_MarkerClicked;
+
+            mapmap.Pins.Add(floridaPin);
+            mapmap.Pins.Add(caliPin);
+            mapmap.Pins.Add(nevadaPin);
+
+            base.OnAppearing();
+        }
     }
 }
