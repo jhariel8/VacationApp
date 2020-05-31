@@ -24,7 +24,7 @@ namespace VacationApp.Views
             placeholderLabel.IsVisible = true;
         }
 
-        private async void City1_Clicked(object sender, EventArgs e)
+        private void City1_Clicked(object sender, EventArgs e)
         {
             City1.BindingContext = new CityInfoViewModel()
             {

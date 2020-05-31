@@ -28,9 +28,19 @@ namespace VacationApp.Views
             BindingContext = viewModel = new ItemsViewModel();
         }
 
-        private async void Pin_MarkerClicked(object sender, PinClickedEventArgs e)
+        private async void California_Pin_MarkerClicked(object sender, PinClickedEventArgs e)
         {
-            await Shell.Current.GoToAsync("///StateInfo");
+            //await Shell.Current.GoToAsync("///StateInfo");
+        }
+
+        private async void Nevada_Pin_MarkerClicked(object sender, PinClickedEventArgs e)
+        {
+            //await Shell.Current.GoToAsync("///StateInfo");
+        }
+
+        private async void Florida_Pin_MarkerClicked(object sender, PinClickedEventArgs e)
+        {
+            await Shell.Current.GoToAsync("FloridaInfoPage");
         }
     }
 }

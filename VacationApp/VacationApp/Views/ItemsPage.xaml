@@ -13,7 +13,7 @@
     <StackLayout>
         <Label FontSize="30" Text="Explore Vacation Hotspots" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
         <Label FontSize="15" Text="Please Select a State Below:" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
-        <maps:Map MapType="Street" Grid.Column="0" Grid.Row="0">
+        <maps:Map MapType="Street" Grid.Column="0" Grid.Row="0" x:Name="mapmap">
             <x:Arguments>
                 <maps:MapSpan>
                     <x:Arguments>

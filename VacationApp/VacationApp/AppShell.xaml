@@ -44,12 +44,12 @@
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="StateInfo">
+    <FlyoutItem Title="StateInfo" Route="FloridaInfoPage">
         <Tab>
-            <ShellContent ContentTemplate="{DataTemplate local:StateInfoTemplatePage}" />
+            <ShellContent ContentTemplate="{DataTemplate local:FloridainfoPage}" />
         </Tab>
     </FlyoutItem>
-                
+
 
     <!-- Optional Templates 
     // These may be provided inline as below or as separate classes.
