@@ -29,14 +29,38 @@
                 </maps:MapSpan>
             </x:Arguments>
             <maps:Map.Pins>
-                <maps:Pin Label="Santa Cruz"
-                       Address="The city with a boardwalk"
-                       Type="Generic" MarkerClicked="Pin_MarkerClicked">
+                <maps:Pin Label="California"
+                       Address="The state of California."
+                       Type="Generic" MarkerClicked="California_Pin_MarkerClicked">
                     <maps:Pin.Position>
                         <maps:Position>
                             <x:Arguments>
-                                <x:Double>36.9628066</x:Double>
-                                <x:Double>-122.0194722</x:Double>
+                                <x:Double>36.456636</x:Double>
+                                <x:Double>-119.326283</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+                <maps:Pin Label="Nevada"
+                       Address="The state of Nevada."
+                       Type="Generic" MarkerClicked="Nevada_Pin_MarkerClicked">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>39.571822</x:Double>
+                                <x:Double>-116.886922</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+                <maps:Pin Label="Florida"
+                       Address="The state of Florida."
+                       Type="Generic" MarkerClicked="Florida_Pin_MarkerClicked">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>28.381735</x:Double>
+                                <x:Double>-81.779204</x:Double>
                             </x:Arguments>
                         </maps:Position>
                     </maps:Pin.Position>
