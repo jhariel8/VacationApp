@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView"
+             xmlns:views="clr-namespace:VacationApp.Views"
+             mc:Ignorable="d"
+             x:Class="VacationApp.Views.StateInfoTemplatePage">
+    <ContentPage.Content>
+        <ScrollView x:Name="scrollView">
+            <StackLayout>
+                <Grid BackgroundColor="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="275"/>
+                        <RowDefinition Height="400"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
+                        <Label Text="State Name" FontSize="Header" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Margin="10" />
+                        <Button Text="City1" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250" Clicked="City1_Clicked"/>
+                        <Button Text="City2" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250" Clicked="City2_Clicked"/>
+                        <Button Text="City3" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250" Clicked="City3_Clicked"/>
+                    </StackLayout>
+                    <Frame Grid.Column="1" BackgroundColor="Transparent" HasShadow="True" BorderColor="Black" CornerRadius="5" HorizontalOptions="End" Margin="10">
+                        <StackLayout Padding="0, 0, 0, 10">
+                            <Label Text="State Info" TextColor="Black" HorizontalOptions="Center" FontSize="Title" />
+                            <Button Text="Go to Live COVID-19 Case Count" HorizontalOptions="Center" BackgroundColor="DeepSkyBlue" Command="{Binding GoToCaseCountCommand}" CommandParameter="https://www.worldometers.info/coronavirus/usa/florida/"/>
+                            <BoxView HeightRequest="2" BackgroundColor="Black"/>
+                            <Label Text="Mobility Data (as of May 28th, 2020)" HorizontalOptions="Center" TextColor="Black" FontSize="Subtitle"/>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="Retail and Recreation" HorizontalOptions="Center" TextColor="Black" FontSize="Subtitle"/>
+                                <Label Grid.Row="0" Grid.Column="1" Text="Parks" HorizontalOptions="Center" TextColor="Black" FontSize="Subtitle"/>
+                                <Grid Grid.Row="1" Grid.ColumnSpan="2">
+                                    <Image Source="downarrow.png" Grid.Column="0" Scale=".5" HorizontalOptions="End"/>
+                                    <Label Text="18%" TextColor="Black" FontSize="Title" Grid.Column="1" HorizontalOptions="Start"/>
+                                    <Image Source="uparrow.png" Grid.Column="2" Scale=".5" HorizontalOptions="End"/>
+                                    <Label Text="18%" TextColor="Black" FontSize="Title" Grid.Column="3" HorizontalOptions="Start"/>
+                                </Grid>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    <StackLayout Grid.Row="1" Grid.ColumnSpan="2">
+                        <Label Text="Please select a city to view more info." TextColor="LightGray" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center" x:Name="placeholderLabel"/>
+                        <views:CityInfoView x:Name="City1" IsVisible="False"/>
+                        <views:CityInfoView x:Name="City2" IsVisible="False"/>
+                        <views:CityInfoView x:Name="City3" IsVisible="False"/>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

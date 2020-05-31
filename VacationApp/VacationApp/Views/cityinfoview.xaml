@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView"
+             xmlns:controls="clr-namespace:PanCardView.Controls;assembly=PanCardView"
+             xmlns:vm="clr-namespace:VacationApp.ViewModels"
+             xmlns:converters="clr-namespace:VacationApp.Views.Converter"
+             xmlns:view="clr-namespace:VacationApp.Views"
+             mc:Ignorable="d"
+             x:Name="CityInfoView1"
+             x:Class="VacationApp.Views.CityInfoView">
+    <ContentView.BindingContext>
+        <vm:CityInfoViewModel></vm:CityInfoViewModel>
+    </ContentView.BindingContext>
+    <ContentView.Resources>
+        <converters:DictionaryToImageSourceConverter x:Key="ImageSourceConverter"/>
+    </ContentView.Resources>
+  <ContentView.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Text="cityname" TextColor="Black" HorizontalOptions="Center" FontSize="Title" Grid.Column="0" Grid.Row="0" />
+            <cards:CoverFlowView ItemsSource="{Binding DateImages}" Grid.Column="0" Grid.Row="1">
+                <cards:CoverFlowView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView>
+                            <StackLayout>
+                                <Image Source="{Binding ImageSource}" Scale=".5"/>
+                                <Label Text="{Binding Date}" TextColor="Black" HorizontalOptions="Center"/>
+                                
+                            </StackLayout>
+                        </ContentView>
+                    </DataTemplate>
+                </cards:CoverFlowView.ItemTemplate>
+                <controls:RightArrowControl></controls:RightArrowControl>
+                <controls:LeftArrowControl></controls:LeftArrowControl>
+                
+            </cards:CoverFlowView>
+            <Label Text="Scroll through the photos to see the changes in activity before and during the COVID-19 pandemic. Make sure to stay up to date on all new covid-19 updates in your region and to follow The centers for Disease Control and Prevention (CDC) health guidelines before travel. " TextColor="LightGray" Grid.ColumnSpan="1" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="1"/>
+            
+        </Grid>
+  </ContentView.Content>
+</ContentView>
