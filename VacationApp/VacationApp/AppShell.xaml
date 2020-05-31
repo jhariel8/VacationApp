@@ -10,7 +10,8 @@
        Shell.TabBarBackgroundColor="#e83737"
        Shell.TabBarIsVisible="False"
        Shell.BackgroundColor="#ffffff"
-       Shell.TitleColor="Black">
+       Shell.TitleColor="Black"
+       FlyoutIcon="White Burger.png">
 
     <!-- 
         Styles and Resources 
@@ -27,6 +28,7 @@
             </Style>
         </ResourceDictionary>
     </Shell.Resources>
+    
 
     <!-- Your Pages -->
     <!--TabBar>
