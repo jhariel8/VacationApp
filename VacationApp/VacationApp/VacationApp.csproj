@@ -13,6 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\FloridainfoPage.xaml.cs">
+      <DependentUpon>FloridainfoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\StateInfoTemplatePage.xaml.cs">
       <DependentUpon>StateInfoTemplatePage.xaml</DependentUpon>
     </Compile>
