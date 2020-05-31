@@ -4,10 +4,12 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using VacationApp.Models;
+using Xamarin.Forms;
 
+[assembly: Dependency(typeof(VacationApp.Services.RequestService))]
 namespace VacationApp.Services
 {
-    public class RequestService
+    public class RequestService : IRequestService
     {
         public async Task<string> ReadCaseCountByState(string name)
         {

@@ -14,6 +14,7 @@ namespace VacationApp
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
+            DependencyService.Register<IRequestService>();
             MainPage = new AppShell();
 
             //Routing.RegisterRoute("FloridaInfoPage", typeof(FloridainfoPage));
