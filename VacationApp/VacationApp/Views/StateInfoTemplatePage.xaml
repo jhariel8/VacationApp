@@ -22,8 +22,8 @@
                     <StackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
                         <Label Text="State Name" FontSize="Header" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" Margin="10" />
                         <Button Text="City1" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250" Clicked="City1_Clicked"/>
-                        <Button Text="City2" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250"/>
-                        <Button Text="City3" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250"/>
+                        <Button Text="City2" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250" Clicked="City2_Clicked"/>
+                        <Button Text="City3" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Aquamarine" WidthRequest="250" Clicked="City3_Clicked"/>
                     </StackLayout>
                     <Frame Grid.Column="1" BackgroundColor="Transparent" HasShadow="True" BorderColor="Black" CornerRadius="5" HorizontalOptions="End" Margin="10">
                         <StackLayout Padding="0, 0, 0, 10">
@@ -48,9 +48,10 @@
                         </StackLayout>
                     </Frame>
                     <StackLayout Grid.Row="1" Grid.ColumnSpan="2">
-                        <Label Text="Please select a city to view more info." TextColor="LightGray" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Label Text="Please select a city to view more info." TextColor="LightGray" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center" x:Name="placeholderLabel"/>
                         <views:CityInfoView x:Name="City1"/>
-                      
+                        <views:CityInfoView x:Name="City2"/>
+                        <views:CityInfoView x:Name="City3"/>
                     </StackLayout>
                 </Grid>
             </StackLayout>

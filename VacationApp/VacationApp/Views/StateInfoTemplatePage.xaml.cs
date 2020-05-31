@@ -19,6 +19,8 @@ namespace VacationApp.Views
             InitializeComponent();
 
             BindingContext = new StateInfoPageViewModel();
+
+            placeholderLabel.IsVisible = true;
         }
 
         private void City1_Clicked(object sender, EventArgs e)
@@ -31,6 +33,39 @@ namespace VacationApp.Views
                     new DateImage() { ImageSource = "downarrow.png", Date="5/6/2020" }
                 }
             };
+
+            City1.IsVisible = true;
+            placeholderLabel.IsVisible = false;
+        }
+
+        private void City2_Clicked(object sender, EventArgs e)
+        {
+            City2.BindingContext = new CityInfoViewModel()
+            {
+                DateImages = new List<DateImage>()
+                {
+                    new DateImage() { ImageSource = "uparrow.png", Date = "5/2/2020" },
+                    new DateImage() { ImageSource = "downarrow.png", Date="5/6/2020" }
+                }
+            };
+
+            City2.IsVisible = true;
+            placeholderLabel.IsVisible = false;
+        }
+
+        private void City3_Clicked(object sender, EventArgs e)
+        {
+            City3.BindingContext = new CityInfoViewModel()
+            {
+                DateImages = new List<DateImage>()
+                {
+                    new DateImage() { ImageSource = "uparrow.png", Date = "5/2/2020" },
+                    new DateImage() { ImageSource = "downarrow.png", Date="5/6/2020" }
+                }
+            };
+
+            City3.IsVisible = true;
+            placeholderLabel.IsVisible = false;
         }
     }
 }
