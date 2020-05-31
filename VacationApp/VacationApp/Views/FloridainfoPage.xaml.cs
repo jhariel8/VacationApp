@@ -29,8 +29,15 @@ namespace VacationApp.Views
             {
                 DateImages = new List<DateImage>()
                 {
-                    new DateImage() { ImageSource = "uparrow.png", Date = "5/2/2020" },
-                    new DateImage() { ImageSource = "downarrow.png", Date="5/6/2020" }
+                    new DateImage() { ImageSource = "Orlando_May29th_2020.jpg", Date = "5/29/2020" },
+                    new DateImage() { ImageSource = "Orlando_May8th_2020.jpg", Date = "5/8/2020" },
+                    new DateImage() { ImageSource = "Orlando_April17th_2020.jpg", Date = "4/17/2020" },
+                    new DateImage() { ImageSource = "Orlando_April17th_2019.jpg", Date = "4/17/2019" },
+                    new DateImage() { ImageSource = "Orlando_March27th_2020.jpg", Date = "3/27/2020" },
+                    new DateImage() { ImageSource = "Orlando_Feb27th_2020.jpg", Date = "2/27/2020" },
+                    new DateImage() { ImageSource = "Orlando_Jan27th_2020.jpg", Date = "1/27/2020" }
+
+
                 }
             };
 
@@ -46,8 +53,13 @@ namespace VacationApp.Views
             {
                 DateImages = new List<DateImage>()
                 {
-                    new DateImage() { ImageSource = "uparrow.png", Date = "5/2/2020" },
-                    new DateImage() { ImageSource = "downarrow.png", Date="5/6/2020" }
+                    new DateImage() { ImageSource = "Miami_May29th_2020.jpg", Date = "5/29/2020" },
+                    new DateImage() { ImageSource = "Miami_May8th_2020.jpg", Date = "5/8/2020" },
+                    new DateImage() { ImageSource = "Miami_April17th_2020.jpg", Date = "4/17/2020" },
+                    new DateImage() { ImageSource = "Miami_April17th_2019.jpg", Date = "4/17/2019" },
+                    new DateImage() { ImageSource = "Miami_March27th_new2020.jpg", Date = "3/27/2020" },
+                    new DateImage() { ImageSource = "Miami_Feb27th_new2020.jpg", Date = "2/27/2020" },
+                    new DateImage() { ImageSource = "Miami_Jan27th_new2020.jpg", Date = "1/27/2020" }
                 }
             };
 
@@ -63,8 +75,13 @@ namespace VacationApp.Views
             {
                 DateImages = new List<DateImage>()
                 {
-                    new DateImage() { ImageSource = "uparrow.png", Date = "5/2/2020" },
-                    new DateImage() { ImageSource = "downarrow.png", Date="5/6/2020" }
+                    new DateImage() { ImageSource = "tampa_may29th_2020.jpg", Date = "5/29/2020" },
+                    new DateImage() { ImageSource = "tampa_may8th_2020.jpg", Date = "5/8/2020" },
+                    new DateImage() { ImageSource = "tampa_april17th_2020.jpg", Date = "4/17/2020" },
+                    new DateImage() { ImageSource = "Tampa_april17th_2019.jpg", Date = "4/17/2019" },
+                    new DateImage() { ImageSource = "tampa_march27th_2020.jpg", Date = "3/27/2020" },
+                    new DateImage() { ImageSource = "tampa_feb27th_2020.jpg", Date = "2/27/2020" },
+                    new DateImage() { ImageSource = "tampa_Jan27th_2020.jpg", Date = "1/27/2020" }
                 }
             };
 
