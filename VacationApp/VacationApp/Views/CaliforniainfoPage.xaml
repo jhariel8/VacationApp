@@ -21,7 +21,7 @@
                         <RowDefinition Height="400"/>
                     </Grid.RowDefinitions>
                     <StackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
-                        <Label Text="California" FontSize="Header" VerticalOptions="Center" HorizontalOptions="Center" TextColor="LightBlue" Margin="10" />
+                        <Label Text="California" FontSize="Header" VerticalOptions="Center" HorizontalOptions="Center" TextColor="LightSlateGray" Margin="10" />
                         <Button Text="Los Angeles" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BackgroundColor="#e83737" WidthRequest="250" Clicked="City1_Clicked"/>
                         <Button Text="San Diego " HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BackgroundColor="#e83737" WidthRequest="250" Clicked="City2_Clicked"/>
                         <Button Text="Sacramento" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" BackgroundColor="#e83737" WidthRequest="250" Clicked="City3_Clicked"/>

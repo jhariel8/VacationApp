@@ -23,7 +23,7 @@
                 <RowDefinition Height="75"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Label Text="{Binding CityName}" TextColor="LightBlue" HorizontalOptions="Center" FontSize="Title" Grid.Column="0" Grid.Row="0" />
+            <Label Text="{Binding CityName}" TextColor="LightSlateGray" HorizontalOptions="Center" FontSize="Title" Grid.Column="0" Grid.Row="0" />
             <cards:CoverFlowView ItemsSource="{Binding DateImages}" Grid.Column="0" Grid.Row="1">
                 <cards:CoverFlowView.ItemTemplate>
                     <DataTemplate>
